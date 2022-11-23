@@ -11,5 +11,4 @@ app.listen(PORT, () => {
 
 app.get('/', (req, res) => {
     console.log('Server has received http request.');
-    res.send('Hello there...')
 });
