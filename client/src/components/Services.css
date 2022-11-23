@@ -1,0 +1,78 @@
+#services {
+    min-height: max-content;
+    padding-top: 5rem;
+}
+
+.services-h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.services {
+    min-height: max-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    height: 14rem;
+    width: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 1rem 3rem;
+}
+
+.card-img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    transition: all .25s ease-in-out;
+}
+
+.service-card pre {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card-opt {
+    width: 100%;
+    height: fit-content;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: .05rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-opt a {
+    font-size: .9rem;
+    background-color: #C1121F;
+    padding: .1rem .4rem;
+}
+
+.card-opt a:hover {
+    filter: drop-shadow(0 1px .4rem #C1121F);
+    transform: translateY(-.1rem);
+}
+
+@media (max-width: 992px) {
+    .service-card {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-opt p {
+        width: 100%;
+        margin: .5rem 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .service-card {
+        min-width: 88vw;
+    }
+}

@@ -1,0 +1,87 @@
+#lolos {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+#lolos h2 {
+    margin-bottom: 2rem;
+}
+
+.why-container {
+    min-height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.why {
+    height: 16rem;
+    width: 20%;
+    border: .1rem solid #131212;
+    background-size: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+    transition: all .25s ease-in-out;
+}
+
+.why h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.why p {
+    color: rgb(255, 255, 255, .8);
+    font-size: 1.05rem;
+}
+
+.why-prem{
+    background-image: url(../images/why-prem.png);
+}
+
+.why-affor{
+    background-image: url(../images/why-affor.png);
+}
+
+.why-speed{
+    background-image: url(../images/why-speed.png);
+}
+
+.why-mobile{
+    background-image: url(../images/why-mobile.png);
+}
+
+.why-conf{
+    background-image: url(../images/why-conf.png);
+}
+
+.why:hover {
+    background-size: 120%;
+}
+
+@media (max-width: 1200px) {
+    .why-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 992px) {
+    .why {
+        height: 12rem;
+        width: 64vw
+    }
+}
+
+@media (max-width: 575px) {
+    .why h3 {
+      font-size: 1.2rem;
+    }
+  }

@@ -1,0 +1,16 @@
+#coupon-slider {
+    height: 2.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C1121F;
+    overflow-x: hidden;
+}
+
+.slider-text {
+    font-size: .9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin: 0 2rem;
+}

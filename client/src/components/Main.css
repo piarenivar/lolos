@@ -1,0 +1,78 @@
+.main {
+    margin-top: 4.5rem;
+    height: 80vh;
+    background-image: url(../images/main-image.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    width: 50%;
+    font-size: 2.75rem;
+    letter-spacing: .1rem;
+    line-height: 1.5;
+}
+
+.header span {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255, .75);
+}
+
+.main-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-sched {
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    background-color: #C1121F;
+    padding: .75rem 1rem;
+    filter: drop-shadow(0 0 .5rem #C1121F);
+}
+
+.main-sched:hover {
+    filter: drop-shadow(0 .25rem 1rem #C1121F);
+    transform: translateY(-.25rem);
+}
+
+@media (max-width: 1200px) {
+    .header {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        height: 80vh;
+    }
+
+    .header, .main-right {
+        width: 100%;
+        text-align: center;
+        margin: 2rem 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        font-size: 1.5rem;
+    }
+
+    .header span {
+        font-size: 1rem;
+    }
+
+    .main-sched {
+        font-size: 1.25rem;
+    }
+}
