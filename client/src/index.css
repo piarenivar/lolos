@@ -80,3 +80,8 @@ p {
     font-size: 2rem;
   }
 }
+
+ul {
+  list-style-type: '- ';
+  margin-left: 2rem;
+}

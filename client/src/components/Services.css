@@ -12,12 +12,13 @@
     min-height: max-content;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
 .service-card {
-    height: 14rem;
+    height: max-content;
+    min-height: max-content;
     width: 24rem;
     display: flex;
     flex-direction: column;
@@ -26,10 +27,16 @@
 }
 
 .card-img {
+    max-height: 12rem;
     width: 100%;
-    height: 12rem;
     object-fit: cover;
     transition: all .25s ease-in-out;
+    background-color: #C1121F;
+    margin-bottom: 1rem;
+}
+
+.card-img:hover {
+    opacity: .88;
 }
 
 .service-card pre {
@@ -40,11 +47,27 @@
 .card-opt {
     width: 100%;
     height: fit-content;
+    min-height: max-content;
     font-family: 'Russo One', sans-serif;
     letter-spacing: .05rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.card-opt p {
+    display: flex;
+    align-items: center;
+}
+
+.card-opt i {
+    margin-left: .5rem;
+    pointer-events: all;
+}
+
+.card-opt i:hover {
+    cursor: pointer;
 }
 
 .card-opt a {
@@ -56,6 +79,11 @@
 .card-opt a:hover {
     filter: drop-shadow(0 1px .4rem #C1121F);
     transform: translateY(-.1rem);
+}
+
+.serv-desc {
+    display: none;
+    transition: all .25s ease-in-out;
 }
 
 @media (max-width: 992px) {
