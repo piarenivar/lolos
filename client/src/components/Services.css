@@ -64,6 +64,7 @@
 .card-opt i {
     margin-left: .5rem;
     pointer-events: all;
+    transition: all .25s ease-in-out;
 }
 
 .card-opt i:hover {
@@ -84,6 +85,10 @@
 .serv-desc {
     display: none;
     transition: all .25s ease-in-out;
+}
+
+.rotate {
+    transform: rotate(-180deg);
 }
 
 @media (max-width: 992px) {
