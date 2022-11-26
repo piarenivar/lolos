@@ -37,7 +37,7 @@ function Services() {
                 <div className='service-card'>
                     <a href='https://loloscarwash.youcanbook.me/' target='_blank' rel="noreferrer" className='card-img'><img src={fullDetailing} className='card-img' alt='Premium Full Car Detailing' /></a>
                     <div className='card-opt'>
-                        <p>Premium Full Car Detailing<i className={expand ? 'fa-solid fa-chevron-down rotate' : 'fa-solid fa-chevron-down'} onClick={handleExpand}></i></p>
+                        <p>Premium Full Car Detailing<i className={expand ? 'fa-solid fa-chevron-down' : 'fa-solid fa-chevron-down rotate'} onClick={handleExpand}></i></p>
                         <a href='https://loloscarwash.youcanbook.me/' target='_blank' rel="noreferrer">$120.00</a>
                     </div> 
                     <p className={expand ? 'serv-desc' : ''}><ul><li>Interior Cleaning</li><li>Exterior Wash</li><li>Windows (Ext/Int)</li><li>Tire Cleaning & Shining</li><li>Dashboard/Cup Holders</li><li>Smell Good</li></ul></p>
