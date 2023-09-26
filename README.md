@@ -1,3 +1,3 @@
 # Lolo's Car Wash
 
-Source code for Lolo's Car Wash. Built using React.
+Source code for Lolo's Car Wash using React.
